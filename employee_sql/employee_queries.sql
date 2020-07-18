@@ -1,3 +1,4 @@
+
 --1. list all employees and display info:  
 	-- employee number, last name, first name, sex, and salary.
 
@@ -29,12 +30,12 @@ join employees c
 --4. list all employees and display department info:
 	-- employee number, last name, first name, and department name.
 
-select a.dept_emp_no, c.last_name, c.first_name, b.dept_name  
+select a.emp_no, c.last_name, c.first_name, b.dept_name  
 from dept_emp a
 join departments b
 	on (a.dept_no = b.dept_no)
 join employees c
-	on (a.dept_emp_no = c.emp_no)
+	on (a.emp_no = c.emp_no)
 ;
 
 --5. list all employees whose first name is "Hercules" and last name begins with "B" and display info: 
@@ -49,10 +50,10 @@ and last_name like 'B%'
 --6. List all employees in the Sales department and display info:
 	-- employee number, last name, first name, and department name
 	
-select a.dept_emp_no, b.last_name, b.first_name, c.dept_name
+select a.emp_no, b.last_name, b.first_name, c.dept_name
 from dept_emp a
 join employees b
-	on (a.dept_emp_no = b.emp_no)
+	on (a.emp_no = b.emp_no)
 join departments c
 	on (a.dept_no = c.dept_no)
 where a.dept_no in (
@@ -65,10 +66,10 @@ where a.dept_no in (
 --7. List all employees in the Sales and Development departments and display info:
 	-- employee number, last name, first name, and department name
 
-select a.dept_emp_no, b.last_name, b.first_name, c.dept_name
+select a.emp_no, b.last_name, b.first_name, c.dept_name
 from dept_emp a
 join employees b
-	on (a.dept_emp_no = b.emp_no)
+	on (a.emp_no = b.emp_no)
 join departments c
 	on (a.dept_no = c.dept_no)
 where a.dept_no in (
@@ -86,4 +87,3 @@ from employees
 group by last_name
 order by last_name_count desc
 ;
-
