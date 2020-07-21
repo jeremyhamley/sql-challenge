@@ -24,7 +24,7 @@ The SQL code for database the schema was exported from quickdatabasediagrams as 
 
 Once the database and schema were created, the tables were populated by importing 6 CSV files.
 
-![sql.png](employee_sql/employee_erd.png)
+![erd](employee_sql/employeeerd.png)
 
 
 # Data Analysis
