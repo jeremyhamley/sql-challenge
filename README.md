@@ -35,7 +35,7 @@ The Data Analysis section of this challenge is broken into two parts:
 
 ## SQL Queries
 
-This section uses SQL to query the database.  The queries are saved in this repo in the file:   employee_quiries
+This section uses SQL to query the database.  The queries are saved in this repo in the file:   employee_queries
 
 SQL queries include:
 
